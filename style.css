@@ -1,0 +1,114 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fdfdfd;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.navbar-brand {
+  font-size: 1.5rem;
+}
+.nav-link {
+  color: #fff !important;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: #ffd700 !important;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  color: white;
+  height: 80vh;
+}
+.hero h1, .hero p {
+  animation: fadeInUp 1.5s ease;
+}
+
+/* Book Cards */
+.book-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.book-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+.book-card img {
+  height: 280px;
+  object-fit: cover;
+}
+.btn-buy {
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  color: white;
+  border: none;
+  transition: 0.3s;
+  border-radius: 25px;
+  padding: 8px 18px;
+}
+.btn-buy:hover {
+  background: linear-gradient(135deg, #ff5722, #e91e63);
+  transform: scale(1.05);
+}
+
+/* Gradient Text */
+.text-gradient {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  /* -webkit-background-clip: text; */
+  -webkit-text-fill-color: transparent;
+}
+
+/* About */
+#about {
+  background: #f3f4f6;
+  border-radius: 20px;
+}
+
+/* Reviews */
+.review-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.review-card:hover {
+  transform: scale(1.05);
+}
+.review-stars {
+  color: #ff9800;
+  font-size: 1.2rem;
+}
+
+/* Contact */
+#contact form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+#contact input, 
+#contact textarea {
+  border-radius: 10px;
+}
+#contact button {
+  border-radius: 30px;
+  padding: 10px 25px;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {opacity: 0; transform: translateY(40px);}
+  to {opacity: 1; transform: translateY(0);}
+}
